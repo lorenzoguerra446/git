@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset='utf-8'>
+    <title>Aula 9 exemplo 1</title>
+</head>
+<body>
+    <script>
+
+var vetor = new Array(10)
+   
+
+     for(var i = 0 ; i < vetor.length ; i++){
+     
+        vetor[i] = new Array(prompt('Digite um valor ' + i))
+        vetor[i] = parseInt(vetor[i])
+
+        if(vetor[i]%2 === 0){
+        document.write(vetor[i] + ' É Número Par' + '<br>')
+        }else{
+            document.write(vetor[i] + ' É número Ímpar' + '<br>')
+        }
+     }
+     
+     document.write(result)
+    </script>
+</body>
+</html>

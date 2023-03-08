@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset='utf-8'>
+    <title>Aula 9 exemplo 3</title>
+</head>
+<body>
+
+    <script>
+    
+     var vetor = new Array(10)
+     var total = 0
+     var opcao 
+
+     for(var i = 0 ; i < vetor.length ; i++){
+        //NA INITERAÇÃO COM USUÁRIO NÃO PRECISA O SINAL DE =     
+        vetor[i] = new Array(prompt('Digite o valor do Produto ' + i))
+        vetor[i] = parseInt(vetor[i])
+
+        total += vetor[i]
+
+        document.write('R$ ' + vetor[i] + '<br>')
+     }
+
+     document.write('Valor total dos produtos ' + total + ' R$')
+
+     opcao = prompt("Pagamento em Débito ou Crédito - Digite 'c' para Crédito e 'd' para Débito")
+     if(opcao === 'c'){
+
+        document.write('<br>' + 'Pagamento efetuado no Crédito')
+     }else if(opcao === 'd'){
+        document.write('<br>' + 'Pagamento efetuado no Débito')
+     }else{
+        document.write('<br>' + 'Forma de pagamento não identificada')
+     }
+
+     
+    </script>
+</body>
+</html>

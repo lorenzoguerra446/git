@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset='utf-8'>
+    <title>Aula 9 exemplo 1</title>
+</head>
+<body>
+    <script>
+
+     var vetor = new Array(4)
+     var result
+
+     for(var i = 0 ; i < vetor.length ; i++){
+     
+        vetor[i] = new Array(prompt('Digite um valor ' + i))
+        vetor[i] = parseInt(vetor[i])
+
+        var mult = (vetor[0] * vetor[2])
+        var soma = (vetor[1] + vetor[3])
+        var result = mult/soma
+
+     }
+     document.write(result)
+    </script>
+</body>
+</html>
