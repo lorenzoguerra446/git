@@ -5,9 +5,10 @@ body{
 }
 
 #container{
-    width: 960px;
+    width: 100%;
     height: 150px; 
     margin: auto;
+    background-color: rgba(203, 7, 7, 0.9);
 }
 #logo{
     width: 200px;
@@ -16,7 +17,7 @@ body{
 }
 #logo img{
     width: 150px;
-    margin: 0px 20px 20px 30px;
+    margin: 0px 20px 20px 130px;
 }
 
 #menu{
@@ -24,12 +25,13 @@ body{
     height: 80px;
     float: right;
     text-align: center;
-    word-spacing: 20px;
-    color: rgb(0, 0, 0);
+    word-spacing: 70px;
+    text-decoration-color: green;
     margin-top: 50px;
 }
 #menu a{
     text-decoration: none;
+    margin: 90px 0px 90px 0px;
 }
 #menu a:hover{
     color:red
@@ -59,12 +61,12 @@ body{
     margin: auto;
 }
 #textoesquerda{
-    width: 460px;
+    width: 440px;
     height: 600px;
     float: left;
 }
 #textodireita{
-    width: 460px;
+    width: 440px;
     height: 600px;
     float: right;
 }
@@ -72,7 +74,7 @@ body{
 #rodape{
     width: 100%;
     height: 90px;
-    background-color: red;
+    background-color: rgba(203, 7, 7, 0.9);
     margin: auto;
 }
 
@@ -98,7 +100,37 @@ body{
     padding-top: 35px;
 }
 
-.sobreIMG{
-    width: 400px;
+.IMG{
+    width: 200px;
     margin: 50px 90px 90px 270px;
+}
+
+.margin{
+    margin-top: 30px;
+}
+
+.galeria{
+    text-align: center;
+    color: red;
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+input {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 12px;
+}
+
+select{
+    width: 100%;
+    padding: 10px 20px;
+    margin: 12px;
+}
+
+textarea{
+width: 100%;
+height: 200px;
+padding: 10px 20px;
+margin: 12px;
 }

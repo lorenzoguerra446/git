@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> </title>
+        <link href="estilo.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+        <style>
+            .tabcontet
+            {
+                display: nome;
+            }
+            .tabcontet .ativa
+            {
+                display: block; display: show;
+            }
+            .imagem
+            {
+                padding-left: 30px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="container"> 
+           <div id="logo"> 
+            <img src="logo.png">
+           </div>
+           <div id="menu"> 
+                <a href="index.html" class="menut">HOME</a>
+                <a href="sobre.html" class="menut">SOBRE</a>
+                <a href="fotos.html" class="menut">FOTOS</a>
+                <a href="contato.html" class="menut">CONTATO</a>
+           </div>
+        </div>
+
+        <div id="texto"> 
+            <h1 class="galeria">GALERIA DE FOTOS</h1>
+        </div>
+
+        <div class="tabcontent ativa " id="galeria1" style="display: block" align="center" >
+
+            <img class="imagem" src="felizzz.jpg" width="300">
+            <img class="imagem" src="caraio.jpg" width="300">
+            <img class="imagem" src="caxiasdosulbasque39404.jpg" width="300">
+            <p align="center">VENHA TORCER COM A GENTE!</p>
+        </div>
+        <div class="tabcontent" id="galeria2"  style="display: none" align="center">
+
+            <img class="imagem" src="eddy.jpg" width="300">
+            <img class="imagem" src="bbas.jpg" width="300">
+            <img class="imagem" src="ginasiosesi.jpg" width="300">
+            <p align="center">VENHA TORCER COM A GENTE!</p>
+        </div>
+        <div class="tabcontent " id="galeria3"  style="display: none" align="center">
+
+            <img class="imagem" src="time2.jpg" width="300">
+            <img class="imagem" src="torcida.jpg" width="300">
+            <img class="imagem" src="vencemo.webp" width="300">
+            <p align="center">VENHA TORCER COM A GENTE!</p>
+        </div>
+        <button  onclick="prev()"> < </button>
+        <button  onclick="next()"> > </button>
+
+        <div id="rodape">
+          <p class="rodtxt">Caxias do Sul - RS - Estadio Sesi</p>
+
+        </div>
+
+    </body>
+
+    <script>
+        var a = 1;
+        $("#galeria1").show();
+
+        function next() {
+            if (a < 3) {
+                $(".tabcontent").hide();
+                a++;
+                $("#galeria" + (a)).show();
+            }
+        }
+
+        function prev() {
+            if (a > 1) {
+                $(".tabcontent").hide();
+                a--;
+                $("#galeria" + (a)).show();
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+</html>
